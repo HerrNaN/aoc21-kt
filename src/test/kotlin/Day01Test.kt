@@ -7,29 +7,15 @@ internal class Day01Test {
     fun inputParser() {
         assertEquals(
             listOf<Long>(1, 2, 3),
-            Day01(
-                "1\n" +
-                        "2\n" +
-                        "3"
-            ).parseInput()
+            Day01().parseInput("1\n2\n3")
         )
     }
 
     @Test
     fun solve1() {
         assertEquals(
-            7, Day01(
-                "199\n" +
-                        "200\n" +
-                        "208\n" +
-                        "210\n" +
-                        "200\n" +
-                        "207\n" +
-                        "240\n" +
-                        "269\n" +
-                        "260\n" +
-                        "263"
-            ).solve1()
+            7,
+            Day01().solve1(listOf(199, 200, 208, 210, 200, 207, 240, 269, 260, 263))
         )
     }
 }
