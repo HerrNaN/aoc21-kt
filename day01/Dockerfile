@@ -1,6 +1,6 @@
 FROM gradle:alpine as BASE
 
-RUN git clone https://github.com/HerrNaN/aoc21 /app
+RUN git clone https://github.com/HerrNaN/aoc21-kt.git /app
 WORKDIR /app
 
 RUN gradle build -x test
