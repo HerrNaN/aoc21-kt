@@ -1,3 +1,6 @@
+package days
+
+import Day
 import cc.ekblad.konbini.Parser
 
 class Day08 : Day<String>() {

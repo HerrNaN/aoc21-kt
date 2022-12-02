@@ -1,3 +1,6 @@
+package days
+
+import Day
 import cc.ekblad.konbini.*
 
 class Day01 : Day<List<Long>>() {

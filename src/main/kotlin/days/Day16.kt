@@ -1,6 +1,9 @@
+package days
+
+import Day
 import cc.ekblad.konbini.Parser
 
-class Day06 : Day<String>() {
+class Day16 : Day<String>() {
     override fun inputParser(): Parser<String> = TODO()
 
     override fun solve1(input: String): Any {

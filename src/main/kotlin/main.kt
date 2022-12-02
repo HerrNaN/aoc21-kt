@@ -1,10 +1,13 @@
+import days.*
+import input.getInput
 import java.io.File
 import java.io.FileNotFoundException
 
-fun main() = days.forEach { (n, day) ->
+fun main(args: Array<String>) = days.forEach { (n, day) ->
+    println(System.getenv().get("DAY"))
     println("Day %02d:".format(n))
     try {
-        run(day, readInputFile(n))
+        getInput(2021, n).onSuccess { run(day, it) }
     } catch (e: FileNotFoundException) {
         println("No input found")
     }
@@ -57,4 +60,5 @@ fun <T : Any> runPart(day: Day<T>, part: Int, rawInput: String) {
         println(e.message)
     }
 }
+
 
